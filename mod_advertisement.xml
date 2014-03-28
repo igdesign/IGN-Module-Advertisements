@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module"
+           version="3.2.1"
+           client="site"
+           method="upgrade">
+  <name>Advertisement</name>
+  <author>Gregory Daynes</author>
+  <version>0.0.1</version>
+  <creationDate>2013-12-25</creationDate>
+  <copyright>Copyright (C) 2013 jEvolve.net. All rights reserved.</copyright>
+  <license>GNU GPL v3</license>
+  <authorEmail>info@jevolve.net</authorEmail>
+  <authorUrl>http://jevovlve.net</authorUrl>
+  <description></description>
+
+  <files>
+    <filename>mod_advertisement.xml</filename>
+    <filename module="mod_advertisement">mod_advertisement.php</filename>
+    <folder>tmpl</folder>
+  </files>
+
+  <media folder="media" destination="mod_advertisement">
+    <folder>css</folder>
+    <folder>js</folder>
+  </media>
+
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+
+        <field name="template"
+  					   type="filelist"
+  					   label="Template"
+  					   description="The layout to display items with"
+  					   directory="/modules/mod_advertisement/tmpl"
+  					   default="Carousel"
+  					   hide_default="1"
+  					   hide_none="1"
+  					   stripext="1"
+  					   filter="\.php$"
+  					   exclude="^_" />
+
+        <field
+          name="serverURL"
+          type="text"
+          label="Server URL"
+          description="URL of advertisment server"
+          default="" />
+
+        <field
+          name="siteID"
+          type="text"
+          label="Site ID"
+          description="ID of website in advertisement server"
+          default="" />
+
+        <field
+          name="blockRepeat"
+          type="radio"
+          label="Block Repeat Banners"
+          description="Prevent same ad from appearing multiple times on a page"
+          default="0">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+          </field>
+
+        <field
+          name="blockCampaignRepeat"
+          type="radio"
+          label="Block Campaign Repeat Banners"
+          description="Prevent ad from same campaign from appearing multiple times on a page"
+          default="0">
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+          </field>
+
+        <field
+          name="target"
+          type="list"
+          label="Window Target"
+          description="Which window to use when clicking an advertisement"
+          default="_blank">
+          <option value="_blank">New Window</option>
+          <option value="_self">Same Window</option>
+          </field>
+
+        <field
+          label="Configuration Options"
+          type="spacer" />
+
+        <field
+          name="configuration"
+          type="textarea"
+          default=""
+          label="JSON Config"
+          description=""
+          rows="10"
+          cols="10"
+          filter="raw" />
+
+        <field
+          name="interval"
+          type="text"
+          default="15"
+          label="Rotation Interval"
+          description="" />
+
+
+
+
+
+      </fieldset>
+
+      <fieldset name="advanced">
+
+
+        <field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+        <field
+          name="deliveryPath"
+          type="text"
+          label="Delivery Path"
+          description="path to the advertisement's delivery folder"
+          default="" />
+
+      </fieldset>
+
+
+
+
+    </fields>
+  </config>
+</extension>
