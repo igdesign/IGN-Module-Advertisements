@@ -28,18 +28,6 @@
     <fields name="params">
       <fieldset name="basic">
 
-        <field name="template"
-  					   type="filelist"
-  					   label="Template"
-  					   description="The layout to display items with"
-  					   directory="/modules/mod_advertisement/tmpl"
-  					   default="Carousel"
-  					   hide_default="1"
-  					   hide_none="1"
-  					   stripext="1"
-  					   filter="\.php$"
-  					   exclude="^_" />
-
         <field name="template" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
 
         <field
@@ -91,6 +79,24 @@
           type="spacer" />
 
         <field
+					name="width"
+					type="text"
+					label="Width"
+					description="" />
+
+				<field
+					name="height"
+					type="text"
+					label="Height"
+					description="" />
+
+				<field
+					name="count"
+					type="text"
+					label="count"
+					description="" />
+
+        <field
           name="configuration"
           type="textarea"
           default=""
@@ -112,7 +118,15 @@
 
 
       </fieldset>
+      <fieldset name="zone">
 
+        <field
+					name="zoneid"
+					type="text"
+					label="Zone Id"
+					description="" />
+
+      </fieldset>
       <fieldset name="advanced">
 
 
