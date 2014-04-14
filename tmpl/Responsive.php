@@ -68,7 +68,7 @@ $configuration = json_decode($configuration);
 foreach($configuration as $zone_name=>$config) {
 
   // possible parameters
-  $widths      = [];
+  $widths      = array();
   $zone_id     = null;
   $conditional = null;
 
