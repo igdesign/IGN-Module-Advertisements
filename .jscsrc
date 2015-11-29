@@ -1,0 +1,67 @@
+{
+    "validateIndentation": 4,
+    "disallowEmptyBlocks": true,
+    "disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"],
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleVarDecl": true,
+    "disallowNestedTernaries": true,
+    "disallowNewlineBeforeBlockStatements": true,
+    "disallowOperatorBeforeLineBreak": ["+", "."],
+    "disallowParenthesesAroundArrowParam": true,
+    "disallowQuotedKeysInObjects": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    "disallowSpaceBeforeSemicolon": true,
+    "disallowSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+    },
+    "disallowSpacesInCallExpression": true,
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+    },
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+    },
+    "disallowSpacesInFunction": {
+        "beforeOpeningRoundBrace": true,
+    },
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+    },
+    "disallowSpacesInsideParentheses": true,
+    "disallowTabs": true,
+    "disallowTrailingComma": true,
+    "disallowYodaConditions": [
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpaceBeforeBinaryOperators": [
+        "=",
+        "+",
+        "-",
+        "/",
+        "*",
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+    "requireSpaceBeforeObjectValues": true,
+    "requireSpaceBetweenArguments": true,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunction": {
+        "beforeOpeningCurlyBrace": true
+    }
+}
