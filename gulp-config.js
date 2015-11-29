@@ -13,7 +13,7 @@ module.exports = {
             media:  '_source/media',
             css:    '_source/media/css',
             js:     '_source/media/js',
-            module: '_source/mod_advertisement',
+            module: '_source/module',
             tmpl:   '_source/tmpl'
         }
     }
