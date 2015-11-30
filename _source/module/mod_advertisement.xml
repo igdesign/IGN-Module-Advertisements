@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension client="site" method="upgrade" type="module" version="3.2.1">
+    <name>Advertisement</name>
+    <author>Gregory Daynes</author>
+    <version>0.0.1</version>
+    <creationDate>2013-12-25</creationDate>
+    <copyright>Copyright (C) 2013 jEvolve.net. All rights reserved.</copyright>
+    <license>GNU GPL v3</license>
+    <authorEmail>info@jevolve.net</authorEmail>
+    <authorUrl>http://jevovlve.net</authorUrl>
+    <description></description>
+
+    <files>
+        <filename>mod_advertisement.xml</filename>
+        <filename module="mod_advertisement">mod_advertisement.php</filename>
+        <folder>tmpl</folder>
+    </files>
+
+    <media destination="mod_advertisement" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+                <field description="JFIELD_ALT_MODULE_LAYOUT_DESC" label="JFIELD_ALT_LAYOUT_LABEL" name="template" type="modulelayout"/>
+
+                <field default="" description="URL of advertisment server" label="Server URL" name="serverURL" type="text"/>
+
+                <field default="" description="ID of website in advertisement server" label="Site ID" name="siteID" type="text"/>
+
+                <field default="0" description="Prevent same ad from appearing multiple times on a page" label="Block Repeat Banners" name="blockRepeat" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field default="0" description="Prevent ad from same campaign from appearing multiple times on a page" label="Block Campaign Repeat Banners" name="blockCampaignRepeat" type="radio">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+
+                <field default="_blank" description="Which window to use when clicking an advertisement" label="Window Target" name="target" type="list">
+                    <option value="_blank">New Window</option>
+                    <option value="_self">Same Window</option>
+                </field>
+
+                <field label="Configuration Options" type="spacer"/>
+
+                <field description="" label="Width" name="width" type="text"/>
+
+                <field description="" label="Height" name="height" type="text"/>
+
+                <field description="" label="count" name="count" type="text"/>
+
+                <field cols="10" default="" description="" filter="raw" label="JSON Config" name="configuration" rows="10" type="textarea"/>
+
+                <field default="15" description="" label="Rotation Interval" name="interval" type="text"/>
+
+            </fieldset>
+            <fieldset name="zone">
+
+                <field description="" label="Zone Id" name="zoneid" type="text"/>
+
+            </fieldset>
+            <fieldset name="advanced">
+
+                <field description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" name="moduleclass_sfx" rows="3" type="textarea"/>
+
+                <field default="" description="path to the advertisement's delivery folder" label="Delivery Path" name="deliveryPath" type="text"/>
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
