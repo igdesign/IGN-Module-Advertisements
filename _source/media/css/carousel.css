@@ -1,0 +1,52 @@
+.carousel-ads {
+  width: 100%;
+}
+
+.carousel-ads__viewport {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.carousel-ads__radio-control {
+  box-sizing: border-box;
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.carousel-ads__item {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+}
+
+.carousel-ads__figure {
+  margin: 0;
+}
+
+.carousel-ads__img {
+  width: 100%;
+}
+
+.carousel-ads__caption {
+  display: block;
+}
+
+.carousel-ads__title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(221,221,221);
+  margin: 10px 0;
+}
+
+.carousel-ads__link {
+  background-color: transparent;
+  display: block;
+  text-align: right;
+}
+
+.carousel-ads__nav {
+  display: none;
+}

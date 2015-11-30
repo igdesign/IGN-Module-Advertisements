@@ -12,14 +12,15 @@ gulp.task('watch', function() {
     }));
 
     $.watch(`${paths.source.js}/**/*.js`, $.batch(function(events, done) {
-        gulp.start(['js'], done);
+        gulp.start(['javascript'], done);
     }));
 
     $.watch(`${paths.source.tmpl}/**/*.tmpl`, $.batch(function(events, done) {
         gulp.start(['templates'], done);
     }));
 
-    $.watch(`${paths.source.module}/**/*.['php', 'xml', 'html', 'json']`, $.batch(function(events, done) {
+    $.watch([`${paths.source.path}/**/*.php`,
+             `${paths.source.path}/**/*.xml`], $.batch(function(events, done) {
         gulp.start(['module'], done);
     }));
 });
