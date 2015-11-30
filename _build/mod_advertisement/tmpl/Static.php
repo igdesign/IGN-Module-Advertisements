@@ -1,7 +1,10 @@
 <?php // no direct acces
 defined( '_JEXEC' ) or die( 'Restricted access');
 
-$interval = $params->get('interval', 15);
+
+
+
+
 
 $serverURL = $params->get('serverURL', '');
 $serverURL = preg_replace('#^https?://#', '', rtrim($serverURL,'/'));
@@ -59,7 +62,6 @@ $configuration = json_decode($configuration);
 
 ?>
 <div class="advertisement  advertisement--repsonsive">
-
   <script>
 <?php
 
@@ -109,7 +111,7 @@ foreach($configuration as $zone_name=>$config) {
 ?>
   </script>
   <noscript>
-    <a target='_blank' href='//<?php echo $serverURL; ?>/<?php echo $deliveryPath; ?>/ck.php?n=<?php echo $n; ?>'>
+    <a target='_blank' href='http://<?php echo $serverURL; ?>/<?php echo $deliveryPath; ?>/ck.php?n=<?php echo $n; ?>'>
       <img border='0' alt='' src='//<?php echo $serverURL; ?>/<?php echo $deliveryPath; ?>/avw.php?zoneid=<?php echo $configuration->zone_id; ?>&amp;n=<?php echo $n; ?>' />
     </a>
   </noscript>

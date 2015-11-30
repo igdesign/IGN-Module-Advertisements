@@ -1,0 +1,9 @@
+{
+    "esnext": true,
+    "lastsemic": true,
+    "node": true,
+    "globals": {
+        "require": false,
+        "module": false
+    }
+}
